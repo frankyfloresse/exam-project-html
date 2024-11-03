@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #FAF4F2;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*------------profile----------------*/
+.profile {
+    display: flex;
+    justify-content: space-between;
+    gap: 167px;
+    padding: 100px 32px 0 26px;
+}
+
+.profile__image {
+    width: 406px;
+    flex-shrink: 0;
+    filter: drop-shadow(0 20px 40px rgba(59, 67, 242, 0.1));
+}
+
+.profile__image img {
+    width: 100%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+.profile__title {
+    max-width: 475px;
+    color: #222;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 62px;
+}
+
+.profile__description {
+    color: #222;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 30px;
+    margin-top: 7px;
+}
+
+.social-media {
+    display: flex;
+    gap: 16px;
+    margin-top: 54px;
+}
+
+.profile__actions {
+    display: flex;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 14px 13px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.15s linear;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
+
+.btn-request {
+    color: #F9F9F9;
+    background: #FF2950;
+}
+
+.btn-download {
+    border: 2px solid #FF9B70;
+    color: rgba(34, 34, 34, 0.50);
+}
+
+
+/*---------achievement-------------*/
+.achievement {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    border-radius: 35px;
+    background: #FF7315;
+    padding: 62px 76px 63px 32px;
+    margin-top: 125px;
+}
+
+.achievement__image {
+    width: 430px;
+}
+
+.achievement__number {
+    color: #F9F9F9;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 62px;
+}
+
+.achievement__project {
+    color: #F9F9F9;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 16px;
+}
+
+.achievement__title {
+    color: #F9F9F9;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 62px;
+    margin-top: 19px;
+}
+
+.achievement__description {
+    max-width: 570px;
+    color: #F9F9F9;
+    font-size: 24px;
+    line-height: 45px;
+    margin-top: 19px;
+}
+
+/*-----------strengths----------------*/
+.strengths {
+    margin-top: 125px;
+}
+
+.strengths__title  {
+    color: #222;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 62px;
+}
+
+.strengths__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin-top: 100px;
+}
+
+.strengths-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 98px;
+    height: 98px;
+    background-color: rgba(34, 34, 34, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.strengths-card__title {
+    color: #222;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-top: 51px;
+}
+
+.strengths-card__description {
+    color: rgba(34, 34, 34, 0.50);
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 12px;
+}
+
+/*-------------portfolio--------------*/
+.portfolio {
+    margin-top: 125px;
+}
+
+.portfolio__title {
+    color: #222;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 123.6%;
+    text-transform: capitalize;
+}
+
+.portfolio__grid {
+    display: grid;
+    max-width: 978px;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin: 64px auto 0;
+}
+
+/*-------------feedback-----------------*/
+.feedback {
+    background-color: #FF7315;
+    padding: 48px 0 185px 0;
+    margin-top: 125px;
+}
+
+.feedback__title {
+    color: #F9F9F9;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    max-width: 609px;
+    margin: 0 auto;
+}
+
+.feedback__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 82px;
+    margin-top: 111px;
+}
+
+.feedback__text {
+    width: 529px;
+    color: #222;
+    font-size: 24px;
+    border-radius: 30px;
+    background: #F9F9F9;
+    padding: 24px 55px 11px;
+}
+
+/*---------price-plans--------------*/
+.price-plans {
+    margin-top: 125px;
+}
+
+.price-plans__title {
+    color: #222;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.price-plans__cards {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-card {
+    width: 335px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #F9F9F9;
+    box-shadow: 0 20px 40px 0 rgba(255, 115, 21, 0.10);
+}
+
+.price-card__title {
+    padding: 18px 0;
+    text-align: center;
+    background: #FF9B70;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+    color: #F9F9F9;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 123.6%;
+    text-transform: capitalize;
+}
+
+.price-card__cost {
+    margin-bottom: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.price-card__amount {
+    color: #2B2B2B;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 123.6%;
+    text-transform: capitalize;
+}
+
+.price-card__duration {
+    color: #2B2B2B;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    opacity: 0.5;
+    margin-bottom: 5px;
+}
+
+.price-card__features {
+    padding: 36px 48px 24px;
+}
+
+.features-list {
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.features-list li + li {
+    margin-top: 16px;
+}
+
+.features-list li::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 24px;
+    background-image: url("../images/icons/check.svg");
+    vertical-align: bottom;
+    margin-right: 16px;
+}
+
+.features-list--unchecked {
+    opacity: 0.5;
+}
+
+li.features-list--unchecked::before {
+    background-image: url("../images/icons/close.svg");
+}
+
+/*----------------contact-me------------------------*/
+.contact-me {
+    margin-top: 100px;
+    border-radius: 25px;
+    background: #FF7315;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px 50px 75px;
+}
+
+.contact-me__title {
+    max-width: 343px;
+    color: #F9F9F9;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 62px;
+}
+
+.contact-me__btn {
+    border-radius: 10px;
+    background: #F9F9F9;
+    box-shadow: 0 0.927px 1.924px 0 rgba(0, 0, 0, 0.01);
+    color: #222;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 17px 75px;
+    transition: all 0.15s linear;
+}
+
+.contact-me__btn:hover {
+    transform: scale(1.03);
+}
+
+/*-------------blog-feed----------------*/
+.blog-feed {
+    margin-top: 125px;
+}
+
+.blog-feed__title {
+    color: #222;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 62px;
+}
+
+.blog-feed__cards {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.blog-card {
+    border-radius: 15px;
+    background: #F9F9F9;
+    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.07);
+    padding: 15px 14px 57px;
+}
+
+.blog-card__image {
+    border-radius: 10px;
+    width: 242px;
+}
+
+.blog-card__title {
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    margin-top: 24px;
+}
+
+.blog-card__description {
+    color: rgba(34, 34, 34, 0.50);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin-top: 12px;
+}
+
+/*------------footer---------------*/
+footer {
+    margin-top: 125px;
+    height: 170px;
+    background: #F1F1F1;
+    color: #222;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
